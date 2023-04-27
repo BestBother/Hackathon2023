@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Financial Education</title>
+</head>
+<title>Financial Education</title>
+<body>
+
+<h1>What is financial education?</h1>
+<p>Financial education is the process of learning about financial concepts, 
+    tools, and strategies that help individuals make informed decisions about managing their money. 
+    It encompasses a wide range of topics, including budgeting, saving, investing, 
+    credit and debt management, insurance, and retirement planning. 
+    Financial education aims to equip individuals with the knowledge and skills necessary 
+    to make responsible financial decisions that align with their personal goals and values.
+    It is important because it can help individuals avoid financial pitfalls such as debt,
+    bankruptcy, and poor investment choices. Additionally, financial education can help 
+    individuals build wealth over time and achieve long-term financial stability. 
+    Financial education can be delivered in various forms, such as in-person workshops,
+    online courses, self-study materials, or one-on-one counseling.</p>
+
+<hr>
+
+<h1>Financial education is important for several reasons:</h1>
+<ol>
+    <li>Helps individuals make informed financial decisions</li>
+    <li>Promotes financial stability</li>
+    <li>Improves financial literacy</li>
+    <li>Encourages responsible financial behavior</li>
+    <li>Helps to reduce income inequality</li>
+  </ol>
+
+<hr>
+
+<h1>How you can use financial education?</h1>
+<ol>
+    <li>Creating a <a href = "https://www.mint.intuit.com/"> budget</a></li>
+    <li><a href = "https://bettermoneyhabits.bankofamerica.com/en/saving-budgeting/ways-to-save-money"> Saving</a> money</li>
+    <li><a href = "https://www.tiaa.org/public/learn/retirement-planning-and-beyond/managing-your-money/seven-steps-to-more-effectively-manage-and-reduce-your-debt">Manage debt</a></li>
+    <li>Plan for <a href = "https://www.nerdwallet.com/article/investing/retirement-planning-an-introduction">retirement </a></li>
+    <li>Understanding <a href = "https://www.unitedway.org/financial-products-and-services-the-basics">financial products and services </a></li>
+    <li>Start <a href = "https://www.bankrate.com/investing/best-investment-apps/"> investing </a></li>
+  </ol>
+
+<hr>
+
+<h1>Resources</h1>
+<ol>
+  <li><a href = "https://www.nefe.org/"> The National Endowment for Financial Education </a></li>
+  <li><a href = "https://www.mymoney.gov/"> MyMoney.gov </a></li>
+  <li><a href = "https://www.finra.org/investors/learn-to-invest"> Financial Industry Regulatory Authority (FINRA) Investor Education </a></li>
+  <li><a href = "https://www.consumerfinance.gov/"> Consumer Financial Protection Bureau (CFPB)</a></li>
+  <li><a href = "https://www.khanacademy.org/economics-finance-domain/core-finance"> Khan Academy Personal Finance</a></li>
+</ol>
+<p>These resources offer a variety of tools and information on personal finance, budgeting, 
+  debt management, investing, retirement planning, and more. They are all reputable sources 
+  and can provide valuable information for those looking to improve their financial education.
+</p>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Build a Survey Form using HTML and CSS
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #ffffff;
+			font-family: calibri;
+			text-align: left;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #ff7300;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #2200ff;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Financial Education Exit Survey Form</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which option best describes you?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="student">Student</option>
+				<option value="intern">Intern</option>
+				<option value="professional">
+					Professional
+				</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				How well do you understand financial education?
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Extensively</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Satisfactory</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Little to no understanding</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>Financial products and services known
+				<small>(Check all that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">Checking Account</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">Saving Account</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">Money Market Account</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Certificate of deposits</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="inp">Mortages</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="inp">Home Equity Loans</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Budgeting</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Investing</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Credit cards</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">401k</input></label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
+
+</body>
+</html>
