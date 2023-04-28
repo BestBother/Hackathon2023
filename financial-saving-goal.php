@@ -36,7 +36,7 @@
 			<nav class = "navbar navbar-expand-lg navbar-expand-md">
 				<div class = "container-fluid">
 					<a class = "navbar-brand" href="index.html">
-						<img src = "https://www.vsu.edu/files/images/logos/vsu-since-1882-logo-multi-colored.svg" alt="Placeholder for Logo" width="70px">
+						<img src = "https://www.vsu.edu/files/images/logos/vsu-since-1882-logo-multi-colored.svg" alt="Placeholder for Logo That Links to the homepage" width="70px">
 						</a>
 				
 					<button class= "navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,11 +53,11 @@
 							</li>
 							
 							<li class="nav-item">
-								<a class = "nav-link" href="#">Job Search</a>
+								<a class = "nav-link" href="jobs.html">Job Search</a>
 							</li>
 							
 							<li class="nav-item">
-								<a class = "nav-link" href="#">Financial Education</a>
+								<a class = "nav-link" href="financialadvice.html">Financial Education</a>
 							</li>
 							
 							<li class="nav-item">
