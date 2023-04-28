@@ -75,7 +75,7 @@ footer
 
 
 /* Styling the Form (Color, Padding, Shadow) */
-		form {
+		.surveyform {
 			background-color: #ff7300;
 			max-width: 500px;
 			margin: 50px auto;
@@ -87,6 +87,11 @@ footer
 		.form-control {
 			text-align: left;
 			margin-bottom: 25px;
+			background-color: #ff7300;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 		}
 
 		/* Styling form-control Label */
