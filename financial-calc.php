@@ -151,7 +151,7 @@ echo '<div class="pie animate" style="--p:'.$test_var.';--c:lightgreen"> $'.$Mon
 		</main>
 
 
-		<footer class = "fixed-bottom">
+		<footer class = "">
 
 			<div class="footer container-fluid">
 				<div class="row justify-content-md-center">

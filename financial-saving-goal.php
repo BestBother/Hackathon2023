@@ -98,7 +98,7 @@
   </div>
 
 
-		<footer class = "fixed-bottom">
+		<footer class = "">
 
 			<div class="footer container-fluid">
 				<div class="row justify-content-md-center">
