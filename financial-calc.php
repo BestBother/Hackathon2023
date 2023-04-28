@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<link rel="stylesheet" href="css/financial-calc.css" >
 <!-- Start of head -->
 
 	<head>
@@ -77,25 +78,77 @@
 <!--End Header--->	
 
 						
-		<link rel="stylesheet" href="css/Save-goal.css" >
-<body>
-<div class = "form">
+
+		<main>
+		
+		<?php
+		error_reporting(E_ALL ^ E_WARNING); 
+	session_start();
+	$expense_holder = $_POST['expense'];
+	$income_holder = $_POST['income'];
+	if(empty($_SESSION["Money"])){
+		$_SESSION["Money"] = $_POST['Money'];
+		$_SESSION["Save"] = $_POST['Save'];
+	}
+	$Money_towards = $_POST['Money'];
+	$Saving_Goal = $_POST['Save'];
+	if (empty($Saving_Goal&&$Money_towards)) {
+		$Money_towards = $_SESSION["Money"];
+		$Saving_Goal = $_SESSION["Save"];
+		if(empty($Saving_Goal&&$Money_towards)) {
+			$test_var = 0;
+		}
+	}
+	if (!empty($expense_holder)) {
+		$_SESSION["current_balance"] -= $expense_holder;
+	}else if(!empty($income_holder)){
+		$_SESSION["current_balance"] += $income_holder;
+	}else{
+		$_SESSION["current_balance"] = 0;
+	}
+	if ($_SESSION["current_balance"] <=0){
+		 ?>
+	<style>
+	.current-balance{
+		color: red;
+	}
+	
+	</style>
+	 <?php
+	}		
+  ?>
+  <div class = "current-balance-title">
+  <h2> Current Balance </h2>
+  <div class = "current-balance">
+  <?php
+  echo '<h2> $'.$_SESSION["current_balance"].'</h2>'
+  ?>
+  <p id="demo" onclick="myFunction()"></p>
+
+
+  <button type="button" onclick="window.location='expense.php';">Add a expense</button>
+	
+  <button type="button" onclick="window.location='income.php';">Add income</button>
+  
+  </div>
+  </div>
+<div class = "Saving-goal">
 <h2> Saving goal </h2>
 <?php
-	error_reporting(E_ALL ^ E_WARNING); 
-	
+if(!$Saving_Goal==0){
+$test_var = $Money_towards/$Saving_Goal;
+$test_var /= .01;
+}
+
+echo '<div class="pie animate" style="--p:'.$test_var.';--c:lightgreen"> $'.$Money_towards.' out <br>of $'.$Saving_Goal.' <br>saved</div>'
+
 ?>
-
-<form method = "post" action ="financial-calc.php">
-<label for="Money towards">Money already saved towards goal</label><br>
-    <input type="text" id="Money" name="Money" placeholder="$0"><br>
-    <label for="save goal">Your savings goal</label><br>
-    <input type="text" id="Save" name="Save" placeholder="$0">
-
-    <input type="submit" value="Submit">
-  </form>
-
   </div>
+  <div class = "reset">
+  <button type="button" onclick="window.location='financial-saving-goal.php';">Reset your saving goal</button>
+  </div>
+			
+		</main>
 
 
 		<footer class = "fixed-bottom">
