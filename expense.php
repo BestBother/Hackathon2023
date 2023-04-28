@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+ 
+<link rel="stylesheet" href="css/Save-goal.css" >
 <!-- Start of head -->
 
 	<head>
@@ -77,25 +79,32 @@
 <!--End Header--->	
 
 						
-		<link rel="stylesheet" href="css/Save-goal.css" >
-<body>
-<div class = "form">
-<h2> Saving goal </h2>
-<?php
-	error_reporting(E_ALL ^ E_WARNING); 
+
+		<main>
+		<div class = "form">
+		<form method = "post" action="financial-calc.php">
+	<?php 
+	session_start();
+	?>
+	<h2> Expense </h2>
 	
-?>
-
-<form method = "post" action ="financial-calc.php">
-<label for="Money towards">Money already saved towards goal</label><br>
-    <input type="text" id="Money" name="Money" placeholder="$0"><br>
-    <label for="save goal">Your savings goal</label><br>
-    <input type="text" id="Save" name="Save" placeholder="$0">
-
-    <input type="submit" value="Submit">
-  </form>
-
-  </div>
+	<label for="psw">Amount<b></b></label>
+	<input type="number" id="expense" name="expense" placeholder="$100" required><br>
+	<label for="psw">Category<b></b></label>
+	 <select id="Category" name="Category">
+    <option value="food">Food</option>
+    <option value="Transportation">Transportation</option>
+    <option value="Gift">Gift</option>
+	<option value="Health">Health</option>
+	<option value="Household">Household</option>
+	<option value="Self expense">Self expense</option>
+    <option value="Other">Other</option>
+  </select>
+	
+	<br><input type="submit" value="save">
+</form> 
+</div>
+		</main>
 
 
 		<footer class = "fixed-bottom">

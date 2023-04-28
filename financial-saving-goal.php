@@ -9,7 +9,7 @@
 		<meta name="Author" content="Mousa Tour&eacute;">
 		
 		<title>
-			Data Consulting Academy
+			VSU Financial Advisor
 		</title>
 
 		<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -36,7 +36,7 @@
 			<nav class = "navbar navbar-expand-lg navbar-expand-md">
 				<div class = "container-fluid">
 					<a class = "navbar-brand" href="index.html">
-						<img src = "vsucolorlogo.svg" alt="Placeholder for Logo" width="70px">
+						<img src = "https://www.vsu.edu/files/images/logos/vsu-since-1882-logo-multi-colored.svg" alt="Placeholder for Logo" width="70px">
 						</a>
 				
 					<button class= "navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,106 +77,13 @@
 <!--End Header--->	
 
 						
-
-		<main>
-			<style>
-
-input[type=text], select {
-  width: 50%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  width: 50%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-body {
-  background-color: #bf873d;
-}
-@property --p{
-  syntax: '<number>';
-  inherits: true;
-  initial-value: 1;
-}
-
-.pie {
-  --p:20;
-  --b:22px;
-  --c:darkred;
-  --w:200px;
-
-  width: var(--w);
-  aspect-ratio: 1;
-  position: relative;
-  display: inline-grid;
-  margin: 5px;
-  place-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  font-family: sans-serif;
-}
-.pie:before,
-.pie:after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-}
-.pie:before {
-  inset: 0;
-  background:
-    radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
-    conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
-  -webkit-mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
-          mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
-}
-.pie:after {
-  inset: calc(50% - var(--b)/2);
-  background: var(--c);
-  transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
-}
-.animate {
-  animation: p 1s .5s both;
-}
-.no-round:before {
-  background-size: 0 0, auto;
-}
-.no-round:after {
-  content: none;
-}
-@keyframes p{
-  from{--p:0}
-}
- 
- 
-  .test{
-  
-	 text-align: center;
-	
- }
- 
-</style>
+		<link rel="stylesheet" href="css/Save-goal.css" >
 <body>
-<div class = "test">
+<div class = "form">
 <h2> Saving goal </h2>
 <?php
 	error_reporting(E_ALL ^ E_WARNING); 
-	//echo '<div class="pie animate" style="--p:0;--c:lightgreen"> $0 </div>'
+	
 ?>
 
 <form method = "post" action ="financial-calc.php">
@@ -189,7 +96,6 @@ body {
   </form>
 
   </div>
-		</main>
 
 
 		<footer class = "fixed-bottom">
@@ -199,7 +105,7 @@ body {
 				
 					<div class="col-2 col-sm-2 col-md-2 col-lg-2">
 						<a href="https://www.vsu.edu/">
-							<img alt="Virginia State University" class="mb-1 vsulogo" src="vsu-since-1882-logo-white.svg" width="90%" height="90%">
+							<img alt="Virginia State University" class="mb-1 vsulogo" src="https://www.vsu.edu/files/images/logos/vsu-since-1882-logo-white.svg" width="90%" height="90%">
 						</a>
 					</div>
 					

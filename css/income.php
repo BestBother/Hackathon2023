@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<link rel="stylesheet" href="css/Save-goal.css" >
 <!-- Start of head -->
 
 	<head>
@@ -9,7 +9,7 @@
 		<meta name="Author" content="Mousa Tour&eacute;">
 		
 		<title>
-			VSU Financial Advisor
+			Data Consulting Academy
 		</title>
 
 		<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -77,25 +77,28 @@
 <!--End Header--->	
 
 						
-		<link rel="stylesheet" href="css/Save-goal.css" >
-<body>
-<div class = "form">
-<h2> Saving goal </h2>
-<?php
-	error_reporting(E_ALL ^ E_WARNING); 
+
+		<main>
+	<div class = "form">
+	<form method = "post" action="financial-calc.php">
+	<?php 
+	session_start();
+	?>
+	<h2> Income </h2>
 	
-?>
-
-<form method = "post" action ="financial-calc.php">
-<label for="Money towards">Money already saved towards goal</label><br>
-    <input type="text" id="Money" name="Money" placeholder="$0"><br>
-    <label for="save goal">Your savings goal</label><br>
-    <input type="text" id="Save" name="Save" placeholder="$0">
-
-    <input type="submit" value="Submit">
-  </form>
-
-  </div>
+	<label for="psw">Amount<b></b></label>
+	<input type="number" id="income" name="income" placeholder="$100" required><br>
+	<label for="psw">Category<b></b></label>
+	 <select id="Category" name="Category">
+    <option value="food">Salary</option>
+    <option value="Transportation">Bonus</option>
+    <option value="Other">Other</option>
+  </select>
+	
+	<br><input type="submit" value="save">
+</form> 
+</div>
+		</main>
 
 
 		<footer class = "fixed-bottom">
