@@ -49,7 +49,7 @@
 						<ul class="navbar-nav mr-auto">
 
 							<li class="nav-item">
-								<a class = "nav-link" href="#">Financial Calculator</a>
+								<a class = "nav-link" href="financial-calc.php">Financial Calculator</a>
 							</li>
 							
 							<li class="nav-item">
